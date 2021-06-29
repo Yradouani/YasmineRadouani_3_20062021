@@ -1,0 +1,230 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color: rgb(233, 233, 233);
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#main_wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+p{
+    font-family: 'Roboto', 'sans-sérif';
+}
+header{
+    width: 100%;
+}
+#logo{
+    margin: 10px auto;
+    font-family: 'Shrikhand', 'sans-sérif';
+    font-size: 30px;
+}
+    
+#logo_contener{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+        
+}
+
+.location{
+    display: flex;
+    justify-content: center;;
+    background-color: $background-color;
+}
+#location_icon{
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    margin-right: 15px;
+}
+.booking{
+    background-color: rgb(240, 240, 240);
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+    padding-top: 40px;   
+    cursor: default;
+}
+.introduction{
+    text-align: center;
+    font-family: 'Roboto','sans-sérif';
+    font-weight: 300;
+    font-size: 20px;
+}
+#btn_header{
+    display: flex;
+    justify-content: center;;
+}
+.button{
+    display: flex;
+    justify-content: center;;
+}
+.btn{
+    border-radius: 12px;
+    width: 90%;
+    height: 55px;
+    margin: 10px auto;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    box-shadow: 2px 2px 10px rgb(209, 209, 209);
+    margin-right: 25px;
+    cursor: pointer;
+
+        &:hover{
+            background-color: rgba(147, 86, 220, 0.1);
+        }
+}
+#icon_choose{
+    margin-right: 20px;
+    color: gray;
+
+        &:hover{
+            color: $primary-color;
+        }
+}
+#icon_menu_composition{
+    margin-right: 20px;
+    color: gray;
+
+        &:hover{
+            color: #9356DC;
+        }
+}
+#icon_eat_out{
+    margin-right: 20px;
+    color: gray;
+
+        &:hover{
+            color: $primary-color;
+        }
+}
+.number{
+    position: relative;
+    left: 15px;
+    top: 9px;
+    background-color: $primary-color;
+    border-radius: 30px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    color: white;
+}
+h2{
+    margin-left: 20px;
+    cursor: default;
+}
+#restaurant_card_section{
+    background-color:rgb(240, 240, 240);
+    display: flex;
+    margin-top: 20px;
+}
+#restaurant_card_container{
+    width: 100%;
+}
+.restaurant_card{
+    width: 91%;
+    margin: 10px auto;
+    box-shadow: 2px 2px 10px rgb(209, 209, 209);
+    border-radius: 15px;
+    overflow: hidden;
+
+        &a{
+            text-decoration: none;
+            color: inherit;
+        }
+}
+.last_restaurant_card{
+    margin-bottom: 50px;
+}
+.restaurant_card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.text_restaurant_card{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.name{
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    font-size: 14px;
+}
+.restaurant_location{
+    margin: 5px 0 10px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+.far{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.hearts i{
+    display: none;
+}
+#hearts{
+    display: none;
+    color: #FF79DA;
+}
+#heart_icon1:hover{
+    display: none;
+}
+#heart_icon1:hover #heart_icon_hover{
+    display: flex;
+    color: #FF79DA;
+}
+
+footer{
+    background-color: rgb(63, 58, 58);
+    display: flex;
+
+         &p{
+            color: white;
+        }
+}
+#footer__container{
+    margin-left: 30px;
+}
+#footer__logo{
+    font-family: 'Shrikhand', 'sans-sérif';
+    font-size: 19px;
+}
+#footer_text__container{
+    margin-bottom: 30px;
+}
+.footer_text{
+    display: flex;
+    margin-bottom: 5px;
+}
+.footer_icon{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+    height: 20px;
+}
+
+.footer__paragraph{
+    margin: 0 0 5px 0;
+}
+.footer_p{
+    margin: 5px 0 10px 0;
+}
