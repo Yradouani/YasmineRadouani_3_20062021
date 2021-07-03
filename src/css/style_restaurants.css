@@ -164,6 +164,10 @@ h3 {
           transform-origin: top;
 }
 
+.dishes_cards__container {
+  width: 100%;
+}
+
 .dishes_cards__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,7 +222,7 @@ h3 {
   white-space: nowrap;
 }
 
-.dishes_cards__container {
+.dishes_cards:hover .dishes_cards__text {
   width: 100%;
 }
 

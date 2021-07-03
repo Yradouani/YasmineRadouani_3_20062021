@@ -172,6 +172,9 @@ h2{
     font-size: 14px;
     font-weight: 300;
 }
+.heart_icon_container{
+    position: relative;
+}
 .heart_icon{
     display: flex;
     align-items: center;
@@ -180,6 +183,8 @@ h2{
     font-size: 20px;
     opacity: 1;
     margin-top: 20px;
+    z-index: 1;
+    position: relative;
 }
 .heart_icon:hover+.heart_icon_hover{
     opacity: 1;
@@ -189,14 +194,16 @@ h2{
     opacity: 0;
 }
 .heart_icon_hover{
-    opacity: 0;
     background: -webkit-linear-gradient($primary-color,#FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0 20px;
     font-size: 20px;
+    display: flex;
     position: absolute;
-    top: 975px;
+    bottom: 17.8px;
+    z-index: 0;
+    opacity: 0;
 }
 
 footer{

@@ -106,6 +106,10 @@ h3{
     animation: glissement 1s ease-in-out;
     transform-origin: top;
 
+        &__container{
+            width: 100%;
+        }
+
         &__text{
             display: flex;
             justify-content: space-between;
@@ -127,22 +131,23 @@ h3{
             transform-origin: right 50%;
         }
 }
-.dishes_cards:hover .dishes_cards__checked{
-    transform: scaleX(1);
-    display: flex;
-    width: 70px;
-}
-.dishes_cards:hover .dishes_cards__container{
-    width: 75%;
-}
-.dishes_cards:hover .accompaniment{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    
-}
-.dishes_cards__container{
-    width: 100%;
+.dishes_cards:hover{
+    & .dishes_cards__checked{
+        transform: scaleX(1);
+        display: flex;
+        width: 70px;
+    }
+    & .dishes_cards__container{
+        width: 75%;
+    }
+    & .accompaniment{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;   
+    }
+    & .dishes_cards__text{
+        width: 100%;
+    }
 }
 .dishes_name{
     font-weight: bold;
