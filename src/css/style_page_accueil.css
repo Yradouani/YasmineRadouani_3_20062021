@@ -96,7 +96,7 @@ h1 {
 
 .btn {
   border-radius: 12px;
-  width: 90%;
+  width: 100%;
   height: 55px;
   margin: 10px auto;
   border: none;
@@ -228,7 +228,7 @@ h2 {
   font-weight: 300;
 }
 
-.far {
+.heart_icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,21 +236,32 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  padding: 0 20px;
+  font-size: 20px;
+  opacity: 1;
+  margin-top: 20px;
 }
 
-#heart_icon_hover {
-  display: none;
+.heart_icon:hover + .heart_icon_hover {
+  opacity: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#heart_icon1:hover {
-  display: none;
+.heart_icon:hover {
+  opacity: 0;
 }
 
-#heart_icon1:hover #heart_icon_hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #FF79DA;
+.heart_icon_hover {
+  opacity: 0;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 20px;
+  font-size: 20px;
+  position: absolute;
+  top: 975px;
 }
 
 footer {
@@ -260,7 +271,7 @@ footer {
   display: flex;
 }
 
-footerp {
+footer p {
   color: white;
 }
 

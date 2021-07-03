@@ -73,7 +73,7 @@ h1{
 }
 .btn{
     border-radius: 12px;
-    width: 90%;
+    width: 100%;
     height: 55px;
     margin: 10px auto;
     border: none;
@@ -101,7 +101,7 @@ h1{
     color: gray;
 
         &:hover{
-            color: #9356DC;
+            color: $primary-color;
         }
 }
 #icon_eat_out{
@@ -172,31 +172,38 @@ h2{
     font-size: 14px;
     font-weight: 300;
 }
-.far{
+.heart_icon{
     display: flex;
     align-items: center;
     cursor: pointer;
+    padding: 0 20px;
+    font-size: 20px;
+    opacity: 1;
+    margin-top: 20px;
 }
-.hearts i{
-    display: none;
+.heart_icon:hover+.heart_icon_hover{
+    opacity: 1;
+    align-items: center;
 }
-#hearts{
-    display: none;
-    color: #FF79DA;
+.heart_icon:hover{
+    opacity: 0;
 }
-#heart_icon1:hover{
-    display: none;
-}
-#heart_icon1:hover #heart_icon_hover{
-    display: flex;
-    color: #FF79DA;
+.heart_icon_hover{
+    opacity: 0;
+    background: -webkit-linear-gradient($primary-color,#FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 20px;
+    font-size: 20px;
+    position: absolute;
+    top: 975px;
 }
 
 footer{
     background-color: rgb(63, 58, 58);
     display: flex;
 
-         &p{
+         & p{
             color: white;
         }
 }
