@@ -22,18 +22,22 @@
 
 @-webkit-keyframes load {
   0% {
+    z-index: 10001;
     opacity: 0.5;
   }
   100% {
+    z-index: 900;
     opacity: 0;
   }
 }
 
 @keyframes load {
   0% {
+    z-index: 10001;
     opacity: 0.5;
   }
   100% {
+    z-index: 900;
     opacity: 0;
   }
 }
@@ -52,8 +56,8 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  -webkit-animation: custom-loading 1s linear infinite, load 2s linear 2s;
-          animation: custom-loading 1s linear infinite, load 2s linear 2s;
+  -webkit-animation: custom-loading 1s linear infinite, load 1s linear 2s;
+          animation: custom-loading 1s linear infinite, load 1s linear 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -90,6 +94,8 @@ body {
 #main_wrapper {
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  z-index: 901;
 }
 
 header {

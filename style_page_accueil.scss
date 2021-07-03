@@ -25,8 +25,8 @@ $background-color: rgb(233, 233, 233);
     animation-fill-mode:forwards;
 }
 @keyframes load {
-    0% { opacity: 0.5; }
-    100% { opacity: 0; }
+    0% { z-index:10001; opacity: 0.5;}
+    100% { z-index: 900; opacity: 0;}
 }
 #loading-spinner::after {
     box-sizing: border-box;
@@ -41,7 +41,7 @@ $background-color: rgb(233, 233, 233);
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: custom-loading 1s linear infinite, load 2s linear 2s;
+    animation: custom-loading 1s linear infinite, load 1s linear 2s;
     animation-fill-mode:forwards;
 }
 @keyframes custom-loading {
@@ -57,6 +57,8 @@ body{
 #main_wrapper{
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    z-index: 901;
 }
 header{
     width: 100%;
