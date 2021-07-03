@@ -4,13 +4,11 @@ body{
     width: 100%;
     margin: 0;
     position: relative;
+    font-family: 'Roboto', 'sans-serif';
 }
 #main_wrapper{
     width: 100%;
     margin: 0 auto;
-}
-p{
-    font-family: 'Roboto', 'sans-sérif';
 }
 header{
     width: 100%;
@@ -19,7 +17,7 @@ header{
 }
 #logo{
     margin: 10px 35px 10px 0;
-    font-family: 'Shrikhand', 'sans-sérif';
+    font-family: 'Shrikhand', 'sans-srif';
     font-size: 30px;
     width: 100%;
     display: flex;
