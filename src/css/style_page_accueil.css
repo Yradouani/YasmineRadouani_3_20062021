@@ -14,8 +14,8 @@
   overflow: hidden;
   background: #0b0b0b;
   opacity: 0.5;
-  -webkit-animation: load 3s linear 3s;
-          animation: load 3s linear 3s;
+  -webkit-animation: load 1s linear 3s;
+          animation: load 1s linear 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

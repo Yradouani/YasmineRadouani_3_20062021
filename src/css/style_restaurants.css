@@ -139,6 +139,51 @@ h3 {
   }
 }
 
+.dishes_cards1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.dishes_cards2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.dishes_cards3 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.dishes_cards4 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.dishes_cards5 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.dishes_cards6 {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.dishes_cards7 {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.dishes_cards8 {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.dishes_cards9 {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
 .dishes_cards {
   background-color: white;
   border-radius: 20px;
@@ -153,8 +198,6 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
   -webkit-animation: glissement 1s ease-in-out;
           animation: glissement 1s ease-in-out;
   -webkit-transform-origin: top;

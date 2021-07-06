@@ -11,10 +11,9 @@ $secondary-color:#9356DC;
     border: none;
     cursor: pointer;
     background: linear-gradient($primary-color,$secondary-color);
-    opacity: 1;
 
         &:hover{
-            opacity: 0.9;
+            opacity: 0.94;
             box-shadow: 2px 2px 10px rgb(209, 209, 209);
         }
 }
