@@ -369,6 +369,7 @@ footer {
 
 footer p {
   color: white;
+  cursor: pointer;
 }
 
 footer a {
