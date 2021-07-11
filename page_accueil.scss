@@ -184,10 +184,27 @@ h2{
     box-shadow: 2px 2px 10px rgb(209, 209, 209);
     border-radius: 15px;
     overflow: hidden;
+    position: relative;
 
         &a{
             text-decoration: none;
             color: inherit;
+        }
+        &__paragraph{
+            background-color: $tertiary-color;
+            width: 90px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            & p{
+            text-decoration:none;
+            color:rgb(46, 94, 71);
+            }
         }
 }
 .last_restaurant_card{
@@ -224,14 +241,16 @@ h2{
     font-size: 20px;
     margin-top: 20px;
     position: relative;
-    transition: background-color 1s;
-    
+    transition: all 1s;
 }
 .heart_icon:hover .far{
     font-weight: bold;
-    background: -webkit-linear-gradient($primary-color,#FF79DA);
+    background-color: -webkit-linear-gradient($primary-color,#FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.far{
+    transition: all 1s;
 }
 
 footer{
@@ -274,4 +293,23 @@ footer{
 }
 .footer_p{
     margin: 5px 0 10px 0;
+}
+
+@media (min-width: 800px){
+
+    #restaurant_card_block{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .restaurant_card{
+        width: 45%;
+        margin: 10px auto;
+    }
+    .button{
+        width: 75%;
+    }
+    nav{
+        display: flex;
+    }
 }
