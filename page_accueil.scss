@@ -245,9 +245,10 @@ h2{
 }
 .heart_icon:hover .far{
     font-weight: bold;
-    background-color: -webkit-linear-gradient($primary-color,#FF79DA);
+    background: -webkit-linear-gradient($primary-color,#FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 .far{
     transition: all 1s;

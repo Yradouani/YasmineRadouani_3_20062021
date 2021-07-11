@@ -107,13 +107,13 @@ h3{
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    
     animation-name: glissement;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: none;
     animation-play-state: running;
     transform-origin: top;
+    animation-fill-mode: both;
 
         &__container{
             width: 100%;
@@ -123,7 +123,8 @@ h3{
             display: flex;
             justify-content: space-between;
             margin: auto 15px;
-            width: 114%;
+            width: 100%;
+            transition: width 500ms;
             
         }
 
@@ -134,20 +135,18 @@ h3{
             background-color: $tertiary-color;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            width: 20%;
+            width: 45px;
             transform: scaleX(0);
-            transition: transform 500ms cubic-bezier(.32,0,.07,1);
+            transition: transform 500ms ;
             transform-origin: right 50%;
         }
 }
+
 .dishes_cards:hover{
     & .dishes_cards__checked{
         transform: scaleX(1);
         display: flex;
         width: 70px;
-    }
-    & .dishes_cards__container{
-        width: 75%;
     }
     & .accompaniment{
         overflow: hidden;
@@ -155,7 +154,7 @@ h3{
         white-space: nowrap;   
     }
     & .dishes_cards__text{
-        width: 100%;
+        width: 95%;
     }
 }
 .dishes_name{
@@ -177,7 +176,7 @@ h3{
     color: white;
     font-size: 30px;
     transform: rotate(-360deg);
-    transition: transform 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 .dishes_cards:hover .check_icon{
     transform: rotate(0deg);
@@ -229,4 +228,10 @@ footer{
 .footer_p{
     margin: 5px 0 10px 0;
     cursor: pointer;
+}
+
+@media (min-width: 800px){
+    .picture_restaurant_card{
+        height: 380px;
+    }
 }

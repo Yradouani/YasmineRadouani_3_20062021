@@ -359,7 +359,7 @@ h2 {
 
 .heart_icon:hover .far {
   font-weight: bold;
-  background-color: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
