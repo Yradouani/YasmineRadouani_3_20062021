@@ -222,6 +222,7 @@ h3 {
 
 .dishes_cards__container {
   width: 100%;
+  position: relative;
 }
 
 .dishes_cards__text {
@@ -259,6 +260,9 @@ h3 {
   transition: transform 500ms, -webkit-transform 500ms;
   -webkit-transform-origin: right 50%;
           transform-origin: right 50%;
+  position: absolute;
+  right: 0;
+  height: 100%;
 }
 
 .dishes_cards:hover .dishes_cards__checked {
@@ -289,6 +293,9 @@ h3 {
 .accompaniment {
   margin: 10px 0;
   font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .price {

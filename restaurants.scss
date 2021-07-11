@@ -1,4 +1,5 @@
 $tertiary-color: #99E2D0;
+$dishes_cards__checked-width: 45px;
 
 body{
     width: 100%;
@@ -117,6 +118,7 @@ h3{
 
         &__container{
             width: 100%;
+            position: relative;
         }
 
         &__text{
@@ -135,10 +137,13 @@ h3{
             background-color: $tertiary-color;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            width: 45px;
+            width: $dishes_cards__checked-width;
             transform: scaleX(0);
             transition: transform 500ms ;
             transform-origin: right 50%;
+            position: absolute;
+            right: 0;
+            height: 100%;
         }
 }
 
@@ -165,6 +170,9 @@ h3{
 .accompaniment{
     margin: 10px 0;
     font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .price{
     font-weight: bold;
