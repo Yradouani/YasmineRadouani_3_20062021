@@ -1,3 +1,4 @@
+$primary-color: #9356DC;
 .heart_icon_container{
     position: relative;
 }
@@ -5,18 +6,23 @@
 @keyframes heart {
     0% {
         opacity: 0;
+        font-weight: 100;
     }
     25% {
-        opacity : 0.25,
+        opacity : 0.25;
+        font-weight : 200;
     }
     50% {
         opacity: 0.5;
+        font-weight : 300;
     }
     75% {
         opacity: 0.75;
+        font-weight: 400;
     }
     100% {
         opacity: 1;
+        font-weight: bold;
     }
 }
 .heart_icon{
@@ -27,13 +33,12 @@
     font-size: 20px;
     margin-top: 20px;
     position: relative;
-    animation: heart 1s ease-in-out;
     
 }
 .heart_icon:hover .far{
-    font-weight: bold;
-    background: -webkit-linear-gradient($primary-color,#FF79DA);
+    animation: heart 1s ease-in-out;
+    animation-fill-mode: forwards;
+    background: linear-gradient($primary-color,#FF79DA);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
