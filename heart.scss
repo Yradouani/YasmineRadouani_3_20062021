@@ -1,0 +1,39 @@
+.heart_icon_container{
+    position: relative;
+}
+
+@keyframes heart {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity : 0.25,
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.heart_icon{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    position: relative;
+    animation: heart 1s ease-in-out;
+    
+}
+.heart_icon:hover .far{
+    font-weight: bold;
+    background: -webkit-linear-gradient($primary-color,#FF79DA);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}

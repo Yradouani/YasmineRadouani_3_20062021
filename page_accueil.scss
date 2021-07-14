@@ -176,12 +176,8 @@ h2{
     margin-top: 20px;
     flex-direction: column;
 }
-#restaurant_card_container{
-    width: 100%;
-}
 .restaurant_card{
-    width: 91%;
-    margin: 10px auto;
+    margin: 10px 10px;
     box-shadow: 2px 2px 10px rgb(209, 209, 209);
     border-radius: 15px;
     overflow: hidden;
@@ -221,10 +217,14 @@ h2{
     justify-content: space-between;
     margin: 0 10px;
 }
+.name_and_location_contener{
+    display: flex;
+    flex-direction: column;
+}
 .name{
     font-weight: bold;
     margin: 10px 0 5px 0;
-    font-size: 14px;
+    font-size: 15px;
 }
 .restaurant_location{
     margin: 5px 0 10px 0;
@@ -234,6 +234,29 @@ h2{
 .heart_icon_container{
     position: relative;
 }
+
+@keyframes heart {
+    0% {
+        opacity: 0;
+        font-weight: 100;
+    }
+    25% {
+        opacity : 0.25;
+        font-weight : 200;
+    }
+    50% {
+        opacity: 0.5;
+        font-weight : 300;
+    }
+    75% {
+        opacity: 0.75;
+        font-weight: 400;
+    }
+    100% {
+        opacity: 1;
+        font-weight: bold;
+    }
+}
 .heart_icon{
     display: flex;
     align-items: center;
@@ -241,18 +264,14 @@ h2{
     padding: 0 20px;
     font-size: 20px;
     margin-top: 20px;
-    position: relative;
-    
+    position: relative;  
 }
 .heart_icon:hover .far{
-    font-weight: bold;
+    animation: heart 1s ease-in-out;
     background: -webkit-linear-gradient($primary-color,#FF79DA);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     
-}
-.far{
-    transition: all 1s ease-in-out;
 }
 
 footer{

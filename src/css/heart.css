@@ -1,0 +1,59 @@
+.heart_icon_container {
+  position: relative;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.heart_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 0 20px;
+  font-size: 20px;
+  margin-top: 20px;
+  position: relative;
+  -webkit-animation: heart 1s ease-in-out;
+          animation: heart 1s ease-in-out;
+}
+
+.heart_icon:hover .far {
+  font-weight: bold;
+}
