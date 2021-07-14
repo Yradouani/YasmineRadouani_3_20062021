@@ -260,6 +260,10 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #restaurant_card_container {
@@ -353,8 +357,6 @@ h2 {
   font-size: 20px;
   margin-top: 20px;
   position: relative;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .heart_icon:hover .far {
@@ -365,8 +367,8 @@ h2 {
 }
 
 .far {
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 footer {
@@ -427,12 +429,6 @@ footer a {
 }
 
 @media (min-width: 800px) {
-  #restaurant_card_section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   #restaurant_card_block {
     display: -webkit-box;
     display: -ms-flexbox;
