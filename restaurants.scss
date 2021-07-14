@@ -118,18 +118,15 @@ h3{
 
         &__container{
             width: 100%;
-            position: relative;
+            transition: width 700ms cubic-bezier(.32,0,.07,1);
+       
         }
-
         &__text{
             display: flex;
             justify-content: space-between;
             margin: auto 15px;
             width: 100%;
-            transition: width 500ms;
-            
         }
-
         &__checked{
             display: flex;
             align-items: center;
@@ -137,13 +134,9 @@ h3{
             background-color: $tertiary-color;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            width: $dishes_cards__checked-width;
             transform: scaleX(0);
-            transition: transform 500ms ;
+            transition: transform 700ms cubic-bezier(.32,0,.07,1);
             transform-origin: right 50%;
-            position: absolute;
-            right: 0;
-            height: 100%;
         }
 }
 
@@ -151,15 +144,16 @@ h3{
     & .dishes_cards__checked{
         transform: scaleX(1);
         display: flex;
-        width: 70px;
+        width: 22%;
+        
     }
     & .accompaniment{
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;   
     }
-    & .dishes_cards__text{
-        width: 95%;
+    & .dishes_cards__container{
+        width: 75%;
     }
 }
 .dishes_name{

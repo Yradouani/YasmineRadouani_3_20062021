@@ -21,7 +21,7 @@ $background-color: rgb(233, 233, 233);
     overflow: hidden;
     background: #0b0b0b;
     opacity: 0.5;
-    animation: load 1s linear 3s;
+    animation: load 1s linear 2s;
     animation-fill-mode:forwards;
 }
 @keyframes load {
@@ -298,10 +298,14 @@ footer{
 
 @media (min-width: 800px){
 
+    #restaurant_card_section{
+        flex-direction: column;
+    }
     #restaurant_card_block{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 20px;
+        width: 100%;
     }
     .restaurant_card{
         width: 45%;
