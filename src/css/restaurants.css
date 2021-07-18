@@ -180,18 +180,14 @@ h3 {
 }
 
 .dishes_cards {
+  display: -webkit-box;
+  -webkit-box-pack: justify;
   background-color: white;
   border-radius: 20px;
   margin: 5px 10px;
   -webkit-box-shadow: 2px 2px 4px #d1d1d1;
           box-shadow: 2px 2px 4px #d1d1d1;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-animation-name: glissement;
           animation-name: glissement;
   -webkit-animation-duration: 1s;
@@ -212,6 +208,7 @@ h3 {
   width: 100%;
   -webkit-transition: width 700ms;
   transition: width 700ms;
+  margin-top: 10px;
 }
 
 .dishes_cards__text {
@@ -267,10 +264,15 @@ h3 {
   width: 75%;
 }
 
+.dishes_cards:hover .dishes_name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .dishes_name {
   font-weight: bold;
   margin: 10px 15px 0 15px;
-  width: 100%;
 }
 
 .accompaniment {
@@ -284,6 +286,7 @@ h3 {
 .price {
   font-weight: bold;
   margin: 8px 15px;
+  padding-right: 15px;
 }
 
 .check_icon {
@@ -372,5 +375,11 @@ footer a {
 @media (min-width: 800px) {
   .picture_restaurant_card {
     height: 380px;
+  }
+}
+
+@media (min-width: 800px) {
+  .dishes_cards {
+    width: 70%;
   }
 }

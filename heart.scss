@@ -40,3 +40,12 @@ $primary-color: #9356DC;
     font-weight: bold;
     transition: font-weight 1s;
 }
+.heart_icon:active .far{
+    animation: heart 1s ease-in-out;
+    animation-fill-mode: forward;
+    background: linear-gradient($primary-color,#FF79DA);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    transition: font-weight 1s;
+}
