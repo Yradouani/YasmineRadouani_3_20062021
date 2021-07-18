@@ -6,23 +6,19 @@ $primary-color: #9356DC;
 @keyframes heart {
     0% {
         opacity: 0;
-        font-weight: 100;
     }
     25% {
         opacity : 0.25;
-        font-weight : 200;
     }
     50% {
         opacity: 0.5;
-        font-weight : 300;
     }
     75% {
         opacity: 0.75;
-        font-weight: 400;
     }
     100% {
         opacity: 1;
-        font-weight: bold;
+        
     }
 }
 .heart_icon{
@@ -41,4 +37,6 @@ $primary-color: #9356DC;
     background: linear-gradient($primary-color,#FF79DA);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    transition: font-weight 1s;
 }
