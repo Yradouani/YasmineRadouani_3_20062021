@@ -79,3 +79,7 @@
   -webkit-transition: font-weight 1s;
   transition: font-weight 1s;
 }
+
+#heart_icon_restaurant {
+  margin-top: 35px;
+}

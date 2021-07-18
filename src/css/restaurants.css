@@ -273,6 +273,9 @@ h3 {
 .dishes_name {
   font-weight: bold;
   margin: 10px 15px 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .accompaniment {
