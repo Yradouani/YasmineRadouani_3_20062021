@@ -93,6 +93,7 @@ h1 {
 h2 {
   margin: 40px 10px 0 16px;
   font-weight: 300;
+  font-size: 17px;
 }
 
 .line_bellow {
@@ -205,7 +206,7 @@ h2 {
 }
 
 .dishes_cards__container {
-  width: 100%;
+  width: 90%;
   -webkit-transition: width 700ms;
   transition: width 700ms;
   margin-top: 10px;
@@ -219,7 +220,9 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto 15px;
-  width: 100%;
+  width: 110%;
+  -webkit-transition: width 1s linear;
+  transition: width 1s linear;
 }
 
 .dishes_cards__checked {
@@ -235,23 +238,19 @@ h2 {
   background-color: #99E2D0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 700ms linear;
-  transition: -webkit-transform 700ms linear;
-  transition: transform 700ms linear;
-  transition: transform 700ms linear, -webkit-transform 700ms linear;
-  -webkit-transform-origin: right 50%;
-          transform-origin: right 50%;
+  -webkit-transition: all 700ms linear;
+  transition: all 700ms linear;
+  width: 0%;
 }
 
 .dishes_cards:hover .dishes_cards__checked {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 22%;
+  -webkit-transition: width 700ms linear;
+  transition: width 700ms linear;
 }
 
 .dishes_cards:hover .accompaniment {
@@ -268,6 +267,12 @@ h2 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.dishes_cards:hover .dishes_cards__text {
+  width: 100%;
+  -webkit-transition: width 1s linear;
+  transition: width 1s linear;
 }
 
 .dishes_name {
@@ -300,11 +305,13 @@ h2 {
           transform: rotate(-360deg);
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
+  opacity: 0;
 }
 
 .dishes_cards:hover .check_icon {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+  opacity: 1;
 }
 
 #btn_order_container {
@@ -322,9 +329,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-footer span {
   color: white;
 }
 
@@ -334,7 +338,7 @@ footer a {
 }
 
 #footer__container {
-  margin-left: 30px;
+  margin: 20px 30px;
 }
 
 #footer__logo {
@@ -343,15 +347,19 @@ footer a {
 }
 
 #footer_text__container {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footer_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5px;
+  margin: 5px 0;
   cursor: pointer;
+}
+
+.footer_text_1 {
+  margin-top: 20px;
 }
 
 .footer_icon {
@@ -371,8 +379,12 @@ footer a {
 }
 
 .footer_p {
-  margin: 5px 0 10px 0;
+  margin: 5px 0 15px 0;
   cursor: pointer;
+}
+
+.contact {
+  margin-top: 10px;
 }
 
 @media (min-width: 800px) {

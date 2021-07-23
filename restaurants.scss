@@ -65,6 +65,7 @@ h1{
 h2{
     margin: 40px 10px 0 16px;
     font-weight: 300;
+    font-size: 17px;
 }
 .line_bellow{
     width: 50px;
@@ -112,7 +113,7 @@ h2{
     animation-fill-mode: both;
 
         &__container{
-            width: 100%;
+            width: 90%;
             transition: width 700ms;
             margin-top: 10px;
        
@@ -121,7 +122,8 @@ h2{
             display: flex;
             justify-content: space-between;
             margin: auto 15px;
-            width: 100%;
+            width: 110%;
+            transition: width 1s linear;
         }
         &__checked{
             display: flex;
@@ -130,17 +132,17 @@ h2{
             background-color: $tertiary-color;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            transform: scaleX(0);
-            transition: transform 700ms linear;
-            transform-origin: right 50%;
+            transition: all 700ms linear;
+            width: 0%;
         }
 }
 
 .dishes_cards:hover{
     & .dishes_cards__checked{
-        transform: scaleX(1);
+        opacity: 1;
         display: flex;
         width: 22%;
+        transition: width 700ms linear;
         
     }
     & .accompaniment{
@@ -155,6 +157,10 @@ h2{
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; 
+    }
+    & .dishes_cards__text{
+        width: 100%;
+        transition: width 1s linear;
     }
 }
 .dishes_name{
@@ -183,9 +189,11 @@ h2{
     font-size: 30px;
     transform: rotate(-360deg);
     transition: all 500ms ease-in-out;
+    opacity: 0;
 }
 .dishes_cards:hover .check_icon{
     transform: rotate(0deg);
+    opacity: 1;
 }
 #btn_order_container{
     display: flex;
@@ -196,29 +204,30 @@ h2{
 footer{
     background-color: rgb(63, 58, 58);
     display: flex;
+    color: white;
 
-    & span{
-        color: white;
-    }
     & a{
         color: inherit;
         text-decoration: none;
     }
 }
 #footer__container{
-    margin-left: 30px;
+    margin: 20px 30px;
 }
 #footer__logo{
     font-family: 'Shrikhand', 'sans-sérif';
     font-size: 19px;
 }
 #footer_text__container{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .footer_text{
     display: flex;
-    margin-bottom: 5px;
+    margin: 5px 0;
     cursor: pointer;
+}
+.footer_text_1{
+    margin-top: 20px;
 }
 .footer_icon{
     display: flex;
@@ -232,8 +241,11 @@ footer{
     margin: 0 0 5px 0;
 }
 .footer_p{
-    margin: 5px 0 10px 0;
+    margin: 5px 0 15px 0;
     cursor: pointer;
+}
+.contact{
+    margin-top: 10px;
 }
 
 @media (min-width: 800px){
