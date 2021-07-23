@@ -298,7 +298,7 @@ h2 {
   right: 20px;
 }
 
-.restaurant_card__paragraph p {
+.restaurant_card__paragraph span {
   text-decoration: none;
   color: #2e5e47;
 }
