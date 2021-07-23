@@ -424,11 +424,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-footer p {
   color: white;
-  cursor: pointer;
 }
 
 footer a {
@@ -437,7 +433,7 @@ footer a {
 }
 
 #footer__container {
-  margin-left: 30px;
+  margin: 20px 30px;
 }
 
 #footer__logo {
@@ -446,14 +442,19 @@ footer a {
 }
 
 #footer_text__container {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footer_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.footer_text_1 {
+  margin-top: 20px;
 }
 
 .footer_icon {
@@ -473,7 +474,12 @@ footer a {
 }
 
 .footer_p {
-  margin: 5px 0 10px 0;
+  margin: 5px 0 15px 0;
+  cursor: pointer;
+}
+
+.contact {
+  margin-top: 10px;
 }
 
 @media (min-width: 800px) {

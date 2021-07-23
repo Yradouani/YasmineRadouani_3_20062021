@@ -276,29 +276,30 @@ h2{
 footer{
     background-color: rgb(63, 58, 58);
     display: flex;
+    color: white;
 
-         & p{
-            color: white;
-            cursor: pointer;
-        }
-        & a{
-            color: inherit;
-            text-decoration: none;
-        }
+    & a{
+        color: inherit;
+        text-decoration: none;
+    }
 }
 #footer__container{
-    margin-left: 30px;
+    margin: 20px 30px;
 }
 #footer__logo{
     font-family: 'Shrikhand', 'sans-sérif';
     font-size: 19px;
 }
 #footer_text__container{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .footer_text{
     display: flex;
-    margin-bottom: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.footer_text_1{
+    margin-top: 20px;
 }
 .footer_icon{
     display: flex;
@@ -312,7 +313,11 @@ footer{
     margin: 0 0 5px 0;
 }
 .footer_p{
-    margin: 5px 0 10px 0;
+    margin: 5px 0 15px 0;
+    cursor: pointer;
+}
+.contact{
+    margin-top: 10px;
 }
 
 @media (min-width: 800px){
