@@ -275,7 +275,7 @@ h2 {
   position: relative;
 }
 
-.restaurant_carda {
+.restaurant_card a {
   text-decoration: none;
   color: inherit;
 }
@@ -332,6 +332,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 3px;
 }
 
 .name {

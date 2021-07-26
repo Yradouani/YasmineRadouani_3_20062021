@@ -271,8 +271,8 @@ h2 {
 
 .dishes_cards:hover .dishes_cards__text {
   width: 100%;
-  -webkit-transition: width 1s linear;
-  transition: width 1s linear;
+  -webkit-transition: width 700ms linear;
+  transition: width 700ms linear;
 }
 
 .dishes_name {

@@ -160,7 +160,7 @@ h2{
     }
     & .dishes_cards__text{
         width: 100%;
-        transition: width 1s linear;
+        transition: width 700ms linear;
     }
 }
 .dishes_name{
@@ -190,6 +190,7 @@ h2{
     transform: rotate(-360deg);
     transition: all 500ms ease-in-out;
     opacity: 0;
+    
 }
 .dishes_cards:hover .check_icon{
     transform: rotate(0deg);

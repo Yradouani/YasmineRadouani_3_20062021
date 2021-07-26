@@ -2,7 +2,6 @@ $primary-color: #9356DC;
 .heart_icon_container{
     position: relative;
 }
-
 @keyframes heart {
     0% {
         opacity: 0;
@@ -29,7 +28,6 @@ $primary-color: #9356DC;
     font-size: 20px;
     margin-top: 20px;
     position: relative;
-    
 }
 .heart_icon:hover .far{
     animation: heart 1s ease-in-out forwards;
@@ -41,11 +39,10 @@ $primary-color: #9356DC;
 }
 .heart_icon:not(:hover) .far{ 
     animation: heart_return 1s ease-in-out;
-    
+    animation-fill-mode: none;
 }
 .far {
-    background: rgb(240, 240, 240);
-    font-weight: 300;
+    animation-fill-mode: none;
 }
 #heart_icon_restaurant{
     margin-top: 35px;
