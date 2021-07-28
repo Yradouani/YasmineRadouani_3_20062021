@@ -2,24 +2,6 @@ $primary-color: #9356DC;
 .heart_icon_container{
     position: relative;
 }
-@keyframes heart {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity : 0.25;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    75% {
-        opacity: 0.75;
-    }
-    100% {
-        opacity: 1;
-        
-    }
-}
 .heart_icon{
     display: flex;
     align-items: center;
@@ -30,13 +12,31 @@ $primary-color: #9356DC;
     position: relative;
 }
 .heart_icon:hover .far{
-    animation: heart 1s ease-in-out forwards;
     background: linear-gradient($primary-color,#FF79DA);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+    transition: all 1s;
+}
+.heart_icon:not(:hover) .far{ 
+    font-weight: 300;
+    background: rgb(240, 240, 240);
+    transition: all 1s;
 }
 #heart_icon_restaurant{
     margin-top: 35px;
+}
+@keyframes heart {
+    from {
+        background: rgb(240, 240, 240);
+        font-weight: 300;
+    }
+    to {
+        background: linear-gradient($primary-color,#FF79DA);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
 }
