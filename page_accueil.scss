@@ -80,12 +80,37 @@ header{
     display: flex;
     justify-content: center;;
     background-color: $background-color;
+    height: 35px;
+
+    &_container{
+        display: flex;
+        margin-left: 70px;
+    }
 }
 #location_icon{
     display: flex;
     justify-content: center;;
     align-items: center;
     margin-right: 15px;
+}
+#search_field{
+    display: flex;
+}
+#search_field_input{
+    border: none;
+    background-color: $background-color;
+}
+input::placeholder{
+    font-family: 'Roboto', 'sans-serif';
+    color: inherit;
+}
+input:focus{
+    outline:none;
+}
+input[type="text"]
+{
+    font-family: 'Roboto', 'sans-serif';
+    color: inherit;
 }
 .booking{
     background-color: rgb(240, 240, 240);
@@ -112,6 +137,16 @@ h1{
     justify-content: center;
     position: relative;
     margin: auto 20px;
+
+    &:hover #icon_choose{
+        color: $primary-color;
+    }
+    &:hover #icon_menu_composition{
+        color: $primary-color;
+    }
+    &:hover #icon_eat_out{
+        color: $primary-color;
+    }
 }
 .btn{
     border-radius: 12px;
@@ -132,26 +167,14 @@ h1{
 #icon_choose{
     margin-right: 20px;
     color: gray;
-
-        &:hover{
-            color: $primary-color;
-        }
 }
 #icon_menu_composition{
     margin-right: 20px;
     color: gray;
-
-        &:hover{
-            color: $primary-color;
-        }
 }
 #icon_eat_out{
     margin-right: 20px;
     color: gray;
-
-        &:hover{
-            color: $primary-color;
-        }
 }
 .number{
     position: absolute;

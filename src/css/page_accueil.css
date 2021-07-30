@@ -126,6 +126,14 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #e9e9e9;
+  height: 35px;
+}
+
+.location_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 70px;
 }
 
 #location_icon {
@@ -139,6 +147,46 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 15px;
+}
+
+#search_field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#search_field_input {
+  border: none;
+  background-color: #e9e9e9;
+}
+
+input::-webkit-input-placeholder {
+  font-family: 'Roboto', 'sans-serif';
+  color: inherit;
+}
+
+input:-ms-input-placeholder {
+  font-family: 'Roboto', 'sans-serif';
+  color: inherit;
+}
+
+input::-ms-input-placeholder {
+  font-family: 'Roboto', 'sans-serif';
+  color: inherit;
+}
+
+input::placeholder {
+  font-family: 'Roboto', 'sans-serif';
+  color: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  font-family: 'Roboto', 'sans-serif';
+  color: inherit;
 }
 
 .booking {
@@ -180,6 +228,18 @@ h1 {
   margin: auto 20px;
 }
 
+.button:hover #icon_choose {
+  color: #9356DC;
+}
+
+.button:hover #icon_menu_composition {
+  color: #9356DC;
+}
+
+.button:hover #icon_eat_out {
+  color: #9356DC;
+}
+
 .btn {
   border-radius: 12px;
   width: 100%;
@@ -207,26 +267,14 @@ h1 {
   color: gray;
 }
 
-#icon_choose:hover {
-  color: #9356DC;
-}
-
 #icon_menu_composition {
   margin-right: 20px;
   color: gray;
 }
 
-#icon_menu_composition:hover {
-  color: #9356DC;
-}
-
 #icon_eat_out {
   margin-right: 20px;
   color: gray;
-}
-
-#icon_eat_out:hover {
-  color: #9356DC;
 }
 
 .number {
